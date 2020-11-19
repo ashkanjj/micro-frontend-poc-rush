@@ -3,6 +3,7 @@ dependencies:
   '@babel/preset-env': 7.12.1_@babel+core@7.12.3
   '@babel/preset-react': 7.12.5_@babel+core@7.12.3
   '@rush-temp/micro-frontend-projecta': 'file:projects/micro-frontend-projecta.tgz'
+  '@rush-temp/micro-frontend-projectb': 'file:projects/micro-frontend-projectb.tgz'
   babel-loader: 8.2.1_@babel+core@7.12.3+webpack@5.6.0
   react: 17.0.1
   react-dom: 17.0.1_react@17.0.1
@@ -5113,11 +5114,31 @@ packages:
       integrity: sha512-8UhROZURhRcTsBo9E81/1aHFGNI504MkBM3F2bdZuFL3NDSBPNtOJPtMLUgKEBidTYtHuUmXzN0Aht2uWEq83A==
       tarball: 'file:projects/micro-frontend-projecta.tgz'
     version: 0.0.0
+  'file:projects/micro-frontend-projectb.tgz':
+    dependencies:
+      '@babel/core': 7.12.3
+      '@babel/preset-env': 7.12.1_@babel+core@7.12.3
+      '@babel/preset-react': 7.12.5_@babel+core@7.12.3
+      babel-loader: 8.2.1_@babel+core@7.12.3+webpack@5.6.0
+      react: 17.0.1
+      react-dom: 17.0.1_react@17.0.1
+      serve: 11.3.2
+      webpack: 5.6.0_webpack-cli@4.2.0
+      webpack-cli: 4.2.0_92c1de40ab93c551b9f0c8f5b24f9291
+      webpack-dev-server: 3.11.0_webpack-cli@4.2.0+webpack@5.6.0
+    dev: false
+    name: '@rush-temp/micro-frontend-projectb'
+    resolution:
+      integrity: sha512-C2toe5efFZkyNkGszneyCW9ZTlX02Oa2HztFt850Wxz24+rWntwoNbW2BZHGzR2mnxxhUyJsQZ1AD9js2KCD8w==
+      tarball: 'file:projects/micro-frontend-projectb.tgz'
+    version: 0.0.0
+registry: ''
 specifiers:
   '@babel/core': ^7.12.3
   '@babel/preset-env': ^7.12.1
   '@babel/preset-react': ^7.12.5
   '@rush-temp/micro-frontend-projecta': 'file:./projects/micro-frontend-projecta.tgz'
+  '@rush-temp/micro-frontend-projectb': 'file:./projects/micro-frontend-projectb.tgz'
   babel-loader: ^8.2.1
   react: ^17.0.1
   react-dom: ^17.0.1

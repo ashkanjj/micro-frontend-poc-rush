@@ -438,7 +438,7 @@
     //   "reviewCategory": "tools"
     },
     {
-      "projectName": "micro-frontend-projectb",
+      "packageName": "micro-frontend-projectb",
       "projectFolder": "project-b"
     }
   ]
