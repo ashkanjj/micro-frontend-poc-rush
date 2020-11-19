@@ -121,7 +121,7 @@
    * Specify a SemVer range to ensure developers use a Node.js version that is appropriate
    * for your repo.
    */
-  "nodeSupportedVersionRange": ">=12.13.0 <13.0.0",
+  "nodeSupportedVersionRange": ">=12.13.0 <=14.15.0",
 
   /**
    * Odd-numbered major versions of Node.js are experimental.  Even-numbered releases
@@ -377,11 +377,12 @@
    * 3. It's useful to have a centralized inventory of all projects and their important metadata.
    */
   "projects": [
-    // {
+    {
     //   /**
     //    * The NPM package name of the project (must match package.json)
     //    */
-    //   "packageName": "my-app",
+      "packageName": "micro-frontend-projecta",
+      "projectFolder": "project-a"
     // 
     //   /**
     //    * The path to the project folder, relative to the rush.json config file.
@@ -435,6 +436,6 @@
     //   "packageName": "my-toolchain",
     //   "projectFolder": "tools/my-toolchain",
     //   "reviewCategory": "tools"
-    // }
+    }
   ]
 }
