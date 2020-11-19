@@ -436,6 +436,10 @@
     //   "packageName": "my-toolchain",
     //   "projectFolder": "tools/my-toolchain",
     //   "reviewCategory": "tools"
+    },
+    {
+      "projectName": "micro-frontend-projectb",
+      "projectFolder": "project-b"
     }
   ]
 }
