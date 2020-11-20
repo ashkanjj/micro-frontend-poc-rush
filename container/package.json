@@ -1,0 +1,30 @@
+{
+  "name": "micro-frontend-container",
+  "version": "1.0.0",
+  "private": "true",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "babel-loader": "^8.2.1",
+    "concurrently": "^5.3.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-regenerator": "^7.12.1",
+    "css-loader": "^5.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "scripts": {
+    "start": "concurrently \"yarn serve\" \"yarn serve:project-a\" \"yarn serve:project-b\"",
+    "serve": "webpack serve --watch --config ./webpack.config.js --mode development --hot",
+    "serve:project-a": "cd ../project-a && yarn build && yarn serve:dist",
+    "serve:project-b": "cd ../project-b && yarn build && yarn serve:dist"
+  }
+}
