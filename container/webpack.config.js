@@ -34,4 +34,5 @@ module.exports = {
     port: 9090,
     hot: true,
   },
+  stats: 'errors-only'
 };

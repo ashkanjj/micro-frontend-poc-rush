@@ -11,6 +11,20 @@
    * "rush my-global-command --help".
    */
   "commands": [
+    {
+      "commandKind": "bulk",
+      "name": "serve",
+      "summary": "Start micro frontend",
+      "description": "Start dev server for micro frontend",
+      "enableParallelism": true
+    },
+    {
+      "commandKind": "global",
+      "name": "custominstall",
+      "shellCommand": "cd container && npm run custom-install",
+      "summary": "do a custom install",
+      "allowWarningsInSuccessfulBuild": true
+    }
     // {
     //   /**
     //    * (Required) Determines the type of custom command.

@@ -23,8 +23,9 @@
   },
   "scripts": {
     "start": "concurrently \"yarn serve\" \"yarn serve:project-a\" \"yarn serve:project-b\"",
-    "serve": "webpack serve --watch --config ./webpack.config.js --mode development --hot",
+    "serve": "webpack serve --config ./webpack.config.js --mode development --hot",
     "serve:project-a": "cd ../project-a && yarn build && yarn serve:dist",
-    "serve:project-b": "cd ../project-b && yarn build && yarn serve:dist"
+    "serve:project-b": "cd ../project-b && yarn build && yarn serve:dist",
+    "custom-install": "echo \"Do something crazy here\""
   }
 }
